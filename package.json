@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@astrojs/tailwind": "^6.0.0",
+    "@fontsource-variable/onest": "^5.1.1",
     "astro": "^5.2.5",
     "tailwindcss": "^3.4.17"
   }
