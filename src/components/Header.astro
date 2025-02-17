@@ -1,12 +1,27 @@
 ---
-
+import { navLinks } from "../data/data";
+import Moon from "../icons/Moon.astro";
 ---
 
-<header>
-  <ul class="flex items-center gap-2.5">
-    <li><a href="#experience">Experiencia</a></li>
-    <li><a href="#projects">Proyectos</a></li>
-    <li><a href="#aboutme">Sobre m&iacute;</a></li>
-    <li><a href="#contact">Contacto</a></li>
-  </ul>
+<header class="fixed top-0 z-10 flex justify-center w-full mt-2">
+  <nav
+    class="flex items-center px-3 font-medium text-sm text-gray-600 dark:text-gray-200"
+  >
+    {
+      navLinks.map((navLink) => (
+        <a
+          class="transition hover:text-blue-500 dark:hover:text-blue-500 p-2"
+          href={navLink.href}
+        >
+          {navLink.text}
+        </a>
+      ))
+    }
+
+    <div class="mx-1">
+      <button class="flex hover:scale-125 transition">
+        <Moon width="20" height="20" />
+      </button>
+    </div>
+  </nav>
 </header>
