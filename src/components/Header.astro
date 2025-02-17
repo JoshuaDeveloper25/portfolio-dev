@@ -1,6 +1,6 @@
 ---
+import ThemeToggle from "./ThemeToggle.astro";
 import { navLinks } from "../data/data";
-import Moon from "../icons/Moon.astro";
 ---
 
 <header class="fixed top-0 z-10 flex justify-center w-full mt-2">
@@ -18,10 +18,6 @@ import Moon from "../icons/Moon.astro";
       ))
     }
 
-    <div class="mx-1">
-      <button class="flex hover:scale-125 transition">
-        <Moon width="20" height="20" />
-      </button>
-    </div>
+    <ThemeToggle />
   </nav>
 </header>

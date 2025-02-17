@@ -19,3 +19,5 @@ export const navLinks = [
     text: "Contacto",
   },
 ];
+
+export const themeToggleOptions = ["Light", "Dark", "System"];
